@@ -1,0 +1,6 @@
+[submodule "gams"]
+	path = gams
+	url = https://github.com/jredmondson/gams
+[submodule "AirSim"]
+	path = AirSim
+	url = https://github.com/VertexStudio/AirSim.git
