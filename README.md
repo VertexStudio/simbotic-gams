@@ -1,6 +1,7 @@
 
 Docker setup:
 ```
+cd simbotic-games
 docker build -t gams .
 docker run -ti -v $(pwd)/:/home/sim gams /bin/bash
 ```
