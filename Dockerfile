@@ -7,6 +7,7 @@ RUN apt-get -y install autoconf
 RUN apt-get -y install sudo
 RUN apt-get -y install wget
 RUN apt-get -y install rsync
+RUN apt-get -y install libboost-all-dev
 
 RUN adduser --disabled-password --gecos '' sim
 RUN adduser sim sudo
