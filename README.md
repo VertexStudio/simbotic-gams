@@ -1,3 +1,7 @@
+Clone this repo recursively:
+```
+git clone --recursive git@github.com:VertexStudio/simbotic-gams.git
+```
 
 Docker setup:
 ```
