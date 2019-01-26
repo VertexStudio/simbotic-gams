@@ -3,7 +3,7 @@ Docker setup:
 ```
 cd simbotic-games
 docker build -t gams .
-docker run -ti -v $(pwd)/:/home/sim --network=host gams /bin/bash
+docker run -ti -v $(pwd):/sim --network=host gams /bin/bash
 ```
 
 Build GAMS:
