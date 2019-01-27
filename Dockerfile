@@ -2,12 +2,15 @@ FROM ubuntu:bionic
 
 RUN apt-get update
 RUN apt-get -y install build-essential
+RUN apt-get -y install clang-5.0 clang++-5.0
 RUN apt-get -y install git-core
 RUN apt-get -y install autoconf
 RUN apt-get -y install sudo
 RUN apt-get -y install wget
 RUN apt-get -y install rsync
 RUN apt-get -y install libboost-all-dev
+RUN apt-get -y install xterm
+RUN apt-get -y install unzip
 
 RUN useradd sim -u 1001 && echo "sim:sim" | chpasswd && adduser sim sudo
 RUN echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers

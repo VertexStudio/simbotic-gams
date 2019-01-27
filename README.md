@@ -7,7 +7,7 @@ Docker setup:
 ```
 cd simbotic-games
 docker build -t gams .
-docker run -ti -v $(pwd):/sim --network=host gams /bin/bash
+docker run -ti -v $(pwd):/sim --network=host -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix --cap-add=SYS_PTRACE gams /bin/bash
 ```
 
 Build GAMS:
