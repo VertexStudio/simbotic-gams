@@ -13,6 +13,7 @@ RUN apt-get -y install xterm
 RUN apt-get -y install unzip
 RUN apt-get -y install lsb-release
 RUN apt-get -y install cmake
+RUN apt-get -y install gdb
 
 RUN useradd sim -u 1001 && echo "sim:sim" | chpasswd && adduser sim sudo
 RUN echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
