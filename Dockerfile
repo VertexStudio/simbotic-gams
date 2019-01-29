@@ -15,8 +15,13 @@ RUN apt-get -y install lsb-release
 RUN apt-get -y install cmake
 RUN apt-get -y install gdb
 
-RUN useradd sim -u 1001 && echo "sim:sim" | chpasswd && adduser sim sudo
-RUN echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
+ARG USER_ID=1000
+ARG GROUP_ID=1000
+
+RUN groupadd -g ${GROUP_ID} sim && \
+    useradd -l -u ${USER_ID} -g sim sim && \
+    echo "sim:sim" | chpasswd && adduser sim sudo && \
+    echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
 
 ENV SIM_ROOT=/sim
 
