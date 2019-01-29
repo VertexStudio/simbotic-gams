@@ -4,4 +4,7 @@
 !/README.md
 !/gams
 !/AirSim
-!multiagent
+!/multiagent/waypoints.sh
+!/multiagent/main.cpp
+!/multiagent/algorithms/**/*.*
+!/multiagent/platforms/**/*.*

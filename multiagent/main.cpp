@@ -3,7 +3,6 @@
 #include "gams/controllers/BaseController.h"
 #include "gams/loggers/GlobalLogger.h"
 
-
 // DO NOT DELETE THIS SECTION
 
 // begin algorithm includes
